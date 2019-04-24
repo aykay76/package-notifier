@@ -1,0 +1,52 @@
+.splitter {
+	width: 100%;
+	height: 100%;
+    display: flex;
+}
+.splitter.vertical {
+	width: 100%;
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.seperator {
+	background-color: lightslategrey;
+	cursor: col-resize;
+	width: 10px;
+	height: 100%;
+	min-width: 10px;
+}
+
+.seperator.vertical {
+	background-color: lightslategrey;
+	cursor: row-resize;
+	width: 100%;
+	height: 10px;
+	min-width: 10px;
+}
+
+.first {
+    background-color: lightgrey;
+	width: 50%;
+	height: 100%;
+	min-width: 10px;
+}
+
+.first.vertical {
+	height: 75%;
+	width: 100%;
+	min-height: 10px;
+}
+
+.second.vertical {
+	height: 25%;
+    min-width: 10px;
+    flex-grow: 100;
+}
+
+.second {
+	width: 100%;
+    min-height: 10px;
+    flex-grow: 100;
+}
